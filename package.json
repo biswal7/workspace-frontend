@@ -1,0 +1,21 @@
+{
+  "name": "workspace-frontend",
+  "version": "1.0.0",
+  "description": "Electron app for managing workspaces with shared context",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "build": "electron-packager . workspace-frontend --platform=darwin,win32,linux --arch=x64 --overwrite"
+  },
+  "dependencies": {
+    "electron": "^33.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": ["frontend", "workspace", "shared-context"],
+  "author": "Your Name",
+  "license": "MIT"
+}
+

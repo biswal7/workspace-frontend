@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workspace Manager</title>
+    <style>
+        #workspace {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        webview {
+            flex: 1;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Workspace Manager</h1>
+    <div>
+        <input type="text" id="appUrl" placeholder="Enter search query or URL (e.g., google.com, cats)" />
+        <button id="addApp">Open App</button>
+    </div>
+    <div id="workspace"></div>
+    <script src="renderer.js"></script>
+</body>
+</html>
